@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.project02"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/MyTitleTheme" >
+        <activity
+            android:name="com.example.activities.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.activities.AddCourseActivity"></activity>
+        <activity android:name="com.example.activities.UpdateCourseActivity"></activity>
+        <activity android:name="com.example.activities.UpdateTimeActivity"></activity>
+        <activity android:name="com.example.activities.AddTimeActivity"></activity>
+        <activity android:name="com.example.activities.CourseTimeActivity"></activity>
+        <activity android:name="com.example.activities.ShowRemarkActivity"></activity>
+    </application>
+
+</manifest>

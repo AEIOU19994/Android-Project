@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    
+    <!-- 左边的按钮 后退按钮 height 20dp width 35dp -->
+    <ImageButton
+        android:background="@drawable/btn_title_bg" 
+        android:id="@+id/head_left_button"
+        android:paddingTop="14dp"
+        android:paddingBottom="13dp"
+        android:scaleType="centerInside"
+        android:layout_width="65dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"/>
+    
+    <!-- 中间的文字 -->
+    <TextView 
+        android:textSize="20sp"
+        android:paddingTop="10dp"
+        android:textColor="#FFFFFF"
+        android:id="@+id/head_center_text"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:text=""/>
+    
+    <!-- 右边的按钮  height 25dp  width 50dp -->
+    <Button 
+        android:id="@+id/head_right_button"
+        android:layout_width="65dp"
+        android:paddingTop="12dp"
+        android:layout_height="fill_parent"
+        android:textSize="18sp"
+        android:gravity="center_horizontal"
+        android:textColor="#FFFFFF"
+        android:text=""
+        android:background="@drawable/btn_title_bg"
+        android:layout_alignParentRight="true"/>
+        
+</RelativeLayout>

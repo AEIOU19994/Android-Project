@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 开课日期 年月日  星期-->
+   <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        
+        <TextView 
+            android:gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:textSize="18sp"
+            android:text="开课日期："/>
+        <EditText 
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/addtime_startdata"
+            android:gravity="center"
+            android:editable="false"
+            android:hint="1995-1-23"/>
+              
+    </LinearLayout>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+    
+     <!-- 结课日期 年月日-->
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        
+        <TextView 
+            android:gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:textSize="18sp"
+            android:text="结课日期："/>
+        <EditText 
+            android:editable="false"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/addtime_enddata"
+            android:gravity="center"
+            android:hint="1995-1-23"/>
+           
+    </LinearLayout>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+    
+    <!-- 上午 下午 全天 -->
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        
+        <TextView 
+            android:layout_width="100dp"
+        	android:layout_height="fill_parent"
+        	android:text="类型："
+        	android:textSize="18sp" 
+        	android:gravity="center"/>
+    
+    	<RadioGroup 
+        	android:id="@+id/addtime_daytype"
+        	android:layout_width="fill_parent"
+        	android:layout_height="fill_parent"
+        	android:orientation="horizontal"> 
+        	<RadioButton 
+            	android:checked="true"
+            	android:layout_height="fill_parent"
+            	android:layout_width="wrap_content"
+            	android:text="上午"
+            	android:id="@+id/rb_shang"/>        
+        	<RadioButton 
+            	android:layout_height="fill_parent"
+            	android:layout_width="wrap_content"
+            	android:text="下午"
+            	android:id="@+id/rb_xia"/>
+        	<RadioButton 
+            	android:layout_height="fill_parent"
+            	android:layout_width="wrap_content"
+            	android:text="晚上"
+            	android:id="@+id/rb_wan"/>
+        	<RadioButton 
+            	android:layout_height="fill_parent"
+            	android:layout_width="wrap_content"
+            	android:text="全天"
+            	android:id="@+id/rb_quan"/>
+        
+    </RadioGroup>
+   
+    </LinearLayout>
+
+     <View 
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+     <EditText
+         android:hint="添加备注"
+         android:id="@+id/addtime_remark"
+         android:layout_width="match_parent"
+         android:layout_height="100dp" />
+     <View 
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+</LinearLayout>
